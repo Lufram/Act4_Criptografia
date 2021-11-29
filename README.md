@@ -59,9 +59,9 @@ Se han modificado para que encripten y desencripten de forma asimétrica los dat
 ## Restricciones
 Hay algunas validaciones en la aplicación para evitar su mal funcionamiento.
 
-      -No se permite dejar campos vacios, para ello utilizamos los métodos **isNumeric()** y **comprobar()**
+      -No se permite dejar campos vacios, para ello utilizamos los métodos _isNumeric()_ y _comprobar()_
       -Solo se pueden seleccionar las opciones mostradas en el menú, en caso de introduccir un valor distinto te lo indicará.
       -Si no hay ninguna frase u objeto encriptados te lo indicará.
       
-##Iniciar Aplicacion
-Dependiendo de que requerimiento quieras ejecutar tendrás que seleccionar uno u otro, dentro de estos la aplicación se inicia de la misma forma, solo hay que ejecutar la clase **Main**
+## Despliegue 📦
+Dependiendo de que requerimiento quieras ejecutar tendrás que seleccionar uno u otro, dentro de estos la aplicación se inicia de la misma forma, solo hay que ejecutar la clase _Main_
