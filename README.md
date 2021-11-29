@@ -1,4 +1,4 @@
-# Act4_Criptografia
+# Act4_Criptografía
 
 ## Requerimiento 1 📋
 
