@@ -1,6 +1,6 @@
 # Act4_Criptografia
 
-## Requerimiento 1
+## Requerimiento 1 📋
 
 Se pide hacer una aplicacion que encripte frases introducidas por el usuario de manera simétrica.
 
@@ -21,7 +21,7 @@ El menu sería el siguiente:
 
 Estos se encargaran de encriptar y desencriptar la frase del usuario mediante métodos creados especificamente para ello.
 
-## Requermiento 2
+## Requermiento 2 📋
 
 Hay que añadir la opcion de encriptar un objeto coche a nuestra aplicación.
 
@@ -42,7 +42,7 @@ El menú quedaría así:
 
 Se han añadido nuevos cifradores capaces de encriptar y desencriptar el objeto Coche utilizando métodos específicos para ello.
 
-## Requerimiento 3
+## Requerimiento 3 📋
 
 Tenemos que cambiar la forma de encriptar los datos de simétrica a asimétrica, por lo que se usarán claves públicas y privadas para ello.
 
@@ -65,3 +65,8 @@ Hay algunas validaciones en la aplicación para evitar su mal funcionamiento.
       
 ## Despliegue 📦
 Dependiendo de que requerimiento quieras ejecutar tendrás que seleccionar uno u otro, dentro de estos la aplicación se inicia de la misma forma, solo hay que ejecutar la clase _Main_
+
+## Autores ✒️
+* **Javier Barón Pérez** - (https://github.com/jabaron56)
+* **Ismael De Gregorio López** - (https://github.com/Lufram)
+* **Alberto Lozano Gómez** - (https://github.com/Tachenko)
