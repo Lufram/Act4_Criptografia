@@ -64,7 +64,7 @@ _Hay algunas validaciones en la aplicación para evitar su mal funcionamiento._
       -Si no hay ninguna frase u objeto encriptados te lo indicará.
       
 ## Despliegue 📦
-_Dependiendo de que requerimiento quieras ejecutar tendrás que seleccionar uno u otro, dentro de estos la aplicación se inicia de la misma forma, solo hay que ejecutar la clase **Main** ._
+_Dependiendo de que requerimiento quieras ejecutar tendrás que seleccionar uno u otro, dentro de estos la aplicación se inicia de la misma forma, solo hay que ejecutar la clase **Main**._
 
 ## Autores ✒️
 * **Javier Barón Pérez** - (https://github.com/jabaron56)
