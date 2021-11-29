@@ -56,7 +56,7 @@ _No se ha modificado nada que pueda afectar a la interfaz que percibe el usuario
 
 _Se han modificado para que encripten y desencripten de forma asimétrica los datos._
 
-## Restricciones
+## Restricciones ❗
 _Hay algunas validaciones en la aplicación para evitar su mal funcionamiento._
 
       -No se permite dejar campos vacios, para ello utilizamos los métodos _isNumeric()_ y _comprobar()_
