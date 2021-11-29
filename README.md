@@ -45,6 +45,7 @@ Se han añadido nuevos cifradores capaces de encriptar y desencriptar el objeto 
 ## Requerimiento 3
 
 Tenemos que cambiar la forma de encriptar los datos de simétrica a asimétrica, por lo que se usarán claves públicas y privadas para ello.
+
 Se tratará de una encriptacion que busca la confidencialidad (RSA)
 
 ### Cliente
@@ -58,9 +59,9 @@ Se han modificado para que encripten y desencripten de forma asimétrica los dat
 ## Restricciones
 Hay algunas validaciones en la aplicación para evitar su mal funcionamiento.
 
-      -No se permite dejar campos vacios, para ello utilizamos los métodos **isNumeric()** y **comprobar()**
+      -No se permite dejar campos vacios, para ello utilizamos los métodos ** isNumeric() ** y **c omprobar() **
       -Solo se pueden seleccionar las opciones mostradas en el menú, en caso de introduccir un valor distinto te lo indicará.
       -Si no hay ninguna frase u objeto encriptados te lo indicará.
       
 ##Iniciar Aplicacion
-Dependiendo de que requerimiento quieras ejecutar tendrás que seleccionar uno u otro, dentro de estos la aplicación se inicia de la misma forma, solo hay que ejecutar la clase **Main**
+Dependiendo de que requerimiento quieras ejecutar tendrás que seleccionar uno u otro, dentro de estos la aplicación se inicia de la misma forma, solo hay que ejecutar la clase ** Main **
