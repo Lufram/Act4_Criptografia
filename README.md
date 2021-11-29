@@ -10,7 +10,7 @@ _Todos los datos se encriptaran usando el algoritmo "AES"_
 
 _Vamos a hacer un menú en el que el usuario pueda introducir una frase y obtenerla mas tarde encriptada o sin encriptar ya que se guardara en memoria._
 
-_El menú sería el siguiente:_
+_El menú sería el siguiente_
 ```
 1. Salir del programa.
 2. Encriptar frase.
