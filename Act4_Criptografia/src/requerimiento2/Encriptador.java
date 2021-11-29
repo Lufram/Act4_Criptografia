@@ -1,4 +1,4 @@
-package requerimiento1;
+package requerimiento2;
 import java.security.GeneralSecurityException;
 import java.security.NoSuchAlgorithmException;
 
@@ -14,7 +14,7 @@ public class Encriptador {
 	 
 	 public Encriptador(SecretKey clave) throws GeneralSecurityException {
 		 this.clave = clave;
-		 encriptador = Cipher.getInstance("AES");
+		 this.encriptador = Cipher.getInstance("AES");
 		 encriptador.init(Cipher.ENCRYPT_MODE, this.clave);
 	 }
 	 
