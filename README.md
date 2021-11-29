@@ -9,10 +9,10 @@ Todos los datos se encriptaran usando el algoritmo "AES"
 
 Vamos a hacer un menu en el que el usuario pueda introducir una frase y obtenerla mas tarde encriptada o sin encriptar ya que se guardara en memoria.
 
-1.Salir del programa.
-2.Encriptar frase.
-3.Mostrar frase encriptada.
-4.Desencriptar
+1. Salir del programa.
+2. Encriptar frase.
+3. Mostrar frase encriptada.
+4. Desencriptar
 
 ### Cifradores
 
@@ -28,11 +28,11 @@ Ahora el usuario tendrá disponible un opción que le permite introducir la matr
 se guardarán el memoria.
 El menú quedaría así:
 
-1.Salir del programa.
-2.Encriptar frase.
-3.Mostrar frase o coche encriptado.
-4.Desencriptar frase o coche.
-5.Encriptar coche.
+1. Salir del programa.
+2. Encriptar frase.
+3. Mostrar frase o coche encriptado.
+4. Desencriptar frase o coche.
+5. Encriptar coche.
 
 ### Cifradores
 
