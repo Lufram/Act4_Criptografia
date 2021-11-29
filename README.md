@@ -31,13 +31,13 @@ _Ahora el usuario tendrá disponible un opción que le permite introducir la mat
 se guardarán el memoria._
 
 _El menú quedaría así_
-
+```
 1. Salir del programa.
 2. Encriptar frase.
 3. Mostrar frase o coche encriptado.
 4. Desencriptar frase o coche.
 5. Encriptar coche.
-
+```
 ### Cifradores
 
 _Se han añadido nuevos cifradores capaces de encriptar y desencriptar el objeto Coche utilizando métodos específicos para ello._
