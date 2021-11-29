@@ -56,6 +56,10 @@ public class Main {
 					case "2":
 						System.out.println("Escribe la frase que quieres encriptar");
 						fraseCliente = read.nextLine();
+						while(comprobar(fraseCliente)) {
+							System.out.println("Tienes que escribir una frase");
+							fraseCliente = read.nextLine();
+						}
 						fraseEncriptada = encriptador.encriptar(fraseCliente);
 						cocheEncriptado = null;
 						System.out.println("La frase a sido encriptada con el algoritmo RSA y se ha guardado en memoria");
@@ -84,12 +88,23 @@ public class Main {
 					case "5":
 						String  matricula, marca, modelo, precio;
 						System.out.println("Introduce la matricula del coche");
-						matricula = read.next();
-						read.nextLine();
+						matricula = read.nextLine();
+						while(comprobar(matricula)) {
+							System.out.println("Tienes que escribir una matricula");
+							matricula = read.nextLine();
+						}
 						System.out.println("Introduce la marca del coche");
 						marca = read.nextLine();
+						while(comprobar(marca)) {
+							System.out.println("Tienes que escribir una marca");
+							marca = read.nextLine();
+						}
 						System.out.println("Introduce el modelo del coche");
 						modelo = read.nextLine();
+						while(comprobar(modelo)) {
+							System.out.println("Tienes que escribir un modelo");
+							modelo = read.nextLine();
+						}
 						System.out.println("Introduce el precio del coche");
 						precio = read.nextLine();
 						while (!isNumeric(precio)) {
@@ -126,6 +141,14 @@ public class Main {
 	        return false;
 	    }
 	    return true;
+	}
+	
+	public static boolean comprobar(String frase) {
+		if(frase.trim().equals("")) {
+			return true;
+		}else {
+			return false;			
+		}
 	}
 
 }

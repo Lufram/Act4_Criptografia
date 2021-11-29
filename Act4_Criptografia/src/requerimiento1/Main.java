@@ -47,6 +47,10 @@ public class Main {
 					case "2":
 						System.out.println("Escribe la frase que quieres encriptar");
 						fraseCliente = read.nextLine();
+						while(comprobar(fraseCliente)) {
+							System.out.println("Tienes que escribir una frase");
+							fraseCliente = read.nextLine();
+						}
 						fraseEncriptada = encriptador.encriptar(fraseCliente);
 						System.out.println("La frase a sido encriptada con el algoritmo AES y se ha guardado en memoria");
 						break;
@@ -73,6 +77,14 @@ public class Main {
 			
 		} catch (GeneralSecurityException e) {
 			e.printStackTrace();
+		}
+	}
+	
+	public static boolean comprobar(String frase) {
+		if(frase.trim().equals("")) {
+			return true;
+		}else {
+			return false;			
 		}
 	}
 
