@@ -3,6 +3,7 @@
 ## Requerimiento 1
 
 Se pide hacer una aplicacion que encripte frases introducidas por el usuario de manera simétrica.
+
 Todos los datos se encriptaran usando el algoritmo "AES"
 
 ### Cliente
@@ -26,6 +27,7 @@ Hay que añadir la opcion de encriptar un objeto coche a nuestra aplicación.
 
 Ahora el usuario tendrá disponible un opción que le permite introducir la matrícula, la marca, el modelo y el precio de su coche, estos datos se encriptarán y
 se guardarán el memoria.
+
 El menú quedaría así:
 
 1. Salir del programa.
@@ -50,3 +52,13 @@ No se ha modificado nada que pueda afectar a la interfaz que percibe el usuario,
 ### Cifradores
 
 Se han modificado para que encripten y desencripten de forma asimétrica los datos.
+
+## Restricciones
+Hay algunas validaciones en la aplicación para evitar su mal funcionamiento.
+
+      -No se permite dejar campos vacios, para ello utilizamos los métodos **isNumeric()** y **comprobar()**
+      -Solo se pueden seleccionar las opciones mostradas en el menú, en caso de introduccir un valor distinto te lo indicará.
+      -Si no hay ninguna frase u objeto encriptados te lo indicará.
+      
+##Iniciar Aplicacion
+Dependiendo de que requerimiento quieras ejecutar tendrás que seleccionar uno u otro, dentro de estos la aplicación se inicia de la misma forma, solo hay que ejecutar la clase **Main**
