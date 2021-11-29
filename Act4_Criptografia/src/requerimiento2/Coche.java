@@ -3,14 +3,17 @@ package requerimiento2;
 import java.io.Serializable;
 
 public class Coche implements Serializable {
-
+	
+	//Serializable
 	private static final long serialVersionUID = 5892482677785015315L;
 	
+	//Atributos
 	private String matricula;
 	private String marca;
 	private String modelo;
 	private String precio;
 	
+	//Constructores
 	public Coche() {
 		super();
 	}
@@ -21,7 +24,8 @@ public class Coche implements Serializable {
 		this.modelo = modelo;
 		this.precio = precio;
 	}
-
+	
+	//Getters y setters
 	public String getMatricula() {
 		return matricula;
 	}
@@ -57,7 +61,8 @@ public class Coche implements Serializable {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-
+	
+	//Metodos sobrescritos
 	@Override
 	public String toString() {
 		return "Coche [matricula=" + matricula + ", marca=" + marca + ", modelo=" + modelo + ", precio=" + precio + "€" + "]";

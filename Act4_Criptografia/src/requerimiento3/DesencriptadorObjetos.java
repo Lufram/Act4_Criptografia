@@ -13,15 +13,18 @@ import javax.crypto.SealedObject;
 import javax.crypto.SecretKey;
 
 public class DesencriptadorObjetos {
+	//Atributos
 	private KeyPair clave;
 	private Cipher desencriptador;
 	
+	//Constructor
 	public DesencriptadorObjetos(KeyPair clave) throws InvalidKeyException, NoSuchAlgorithmException, NoSuchPaddingException {
 		this.clave = clave;
 		desencriptador = Cipher.getInstance("RSA");
 		desencriptador.init(Cipher.DECRYPT_MODE, this.clave.getPrivate());
 	}
 	
+	//Metodo para desencriptar objetos
 	public Coche desencriptarObjeto (SealedObject cocheEncriptado) throws ClassNotFoundException, IllegalBlockSizeException, BadPaddingException, IOException {
 		Coche cocheDesencriptado = (Coche)cocheEncriptado.getObject(desencriptador);
 		return cocheDesencriptado;

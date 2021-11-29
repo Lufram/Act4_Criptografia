@@ -18,9 +18,12 @@ public class Main {
 	public static void main(String[] args) {
 		
 		try {
+			//Creamos un generador de pares de claves
 			KeyPairGenerator generador = KeyPairGenerator.getInstance("RSA");
+			//Generamos un par de claves
 			KeyPair clave = generador.generateKeyPair();
 			
+			//Creamos los objetos que se encargan de encriptar y desencriptar y les pasamos el mismo par de claves
 			Encriptador encriptador = new Encriptador(clave);
 			Desencriptador desencriptador = new Desencriptador(clave);
 			EncriptadorObjetos encriptadorObjetos = new EncriptadorObjetos(clave);
@@ -28,6 +31,7 @@ public class Main {
 			
 			Scanner read = new Scanner(System.in);
 			
+			//Variables
 			String fraseCliente;
 			byte[] fraseEncriptada = null;
 			byte[] fraseDesencriptada;
@@ -35,6 +39,7 @@ public class Main {
 			Coche cocheDesencriptado;
 			boolean continuar = true;
 			
+			//Hacemos el menu con un do while
 			do {
 				System.out.println("-----------------------------------\n"
 						+ "Tiene que elegir una de estas 4 opciones:\n1-.Salir del programa"
@@ -43,6 +48,7 @@ public class Main {
 	
 				String valor = read.nextLine();
 				
+				//Validamos el menu para que solo se puedan seleccionar las opciones indicadas
 				while (!valor.equals("3") && !valor.equals("1") &&!valor.equals("2") && !valor.equals("4") && !valor.equals("5")) {
 					System.out.println("Tiene que escoger una de las 4 opciones");
 					valor = read.nextLine();
@@ -50,21 +56,25 @@ public class Main {
 				
 				switch (valor) {
 					case "1":
+						//Salimos del bucle por lo tanto se termina la ejecucion
 						continuar = false;
 						System.out.println("Cerrando programa");
 						break;
 					case "2":
 						System.out.println("Escribe la frase que quieres encriptar");
 						fraseCliente = read.nextLine();
+						//Comprobaremos si hay contenido en la frase o no
 						while(comprobar(fraseCliente)) {
 							System.out.println("Tienes que escribir una frase");
 							fraseCliente = read.nextLine();
 						}
+						//Utiliza un metodo del encriptador para encriptar la frase e indica que lo ha hecho
 						fraseEncriptada = encriptador.encriptar(fraseCliente);
 						cocheEncriptado = null;
-						System.out.println("La frase a sido encriptada con el algoritmo RSA y se ha guardado en memoria");
+						System.out.println("La frase ha sido encriptada con el algoritmo RSA y se ha guardado en memoria");
 						break;
 					case "3":
+						//Si no hay nada encriptado lo indica y si lo hay lo muestra encriptado
 						if (fraseEncriptada == null && cocheEncriptado == null) {
 							System.out.println("No hay ninguna frase o coche encriptados en memoria");
 						}else if(cocheEncriptado == null){
@@ -74,6 +84,8 @@ public class Main {
 						}
 						break;
 					case "4":
+						//Si no hay nada encriptado lo indica y si hay algo encriptado utiliza un metodo del desencriptador para mostrarnos
+						//la frase o el objeto original
 						if(fraseEncriptada == null && cocheEncriptado == null) {
 							System.out.println("No hay ninguna frase o coche encriptados en memoria");
 						}else if(cocheEncriptado == null){
@@ -86,6 +98,8 @@ public class Main {
 						
 						break;
 					case "5":
+						//El usuario tiene que introducir todos los datos de un coche y el encriptador de objetos se encargara de encriptarlo,
+						//entonces se guardara en memoria
 						String  matricula, marca, modelo, precio;
 						System.out.println("Introduce la matricula del coche");
 						matricula = read.nextLine();
@@ -114,7 +128,7 @@ public class Main {
 						Coche c1 = new Coche(matricula, marca, modelo, precio );
 						cocheEncriptado = encriptadorObjetos.encriptarObjeto(c1);
 						fraseEncriptada = null;
-						System.out.println("El coche a sido encriptado con el algoritmo RSA y se ha guardado en memoria");
+						System.out.println("El coche ha sido encriptado con el algoritmo RSA y se ha guardado en memoria");
 				}
 
 		}while(continuar);
@@ -126,7 +140,7 @@ public class Main {
 		}
 	}
 	
-
+	//Metodo para comprobar si un String contiene un numero o no
 	public static boolean isNumeric(String strNum) {
 	    if (strNum == null) {
 	        return false;
@@ -143,6 +157,7 @@ public class Main {
 	    return true;
 	}
 	
+	//Metodo para comprobar si un String esta vacio o no
 	public static boolean comprobar(String frase) {
 		if(frase.trim().equals("")) {
 			return true;
