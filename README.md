@@ -40,7 +40,7 @@ El menú quedaría así:
 
 ### Cifradores
 
-Se han añadido nuevos cifradores capaces de encriptar y desencriptar el objeto Coch, utilizando métodos específicos para ello.
+Se han añadido nuevos cifradores capaces de encriptar y desencriptar el objeto Coche utilizando métodos específicos para ello.
 
 ## Requerimiento 3
 
