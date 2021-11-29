@@ -2,13 +2,13 @@
 
 ## Requerimiento 1 📋
 
-_Se pide hacer una aplicacion que encripte frases introducidas por el usuario de manera simétrica._
+_Se pide hacer una aplicación que encripte frases introducidas por el usuario de manera simétrica._
 
 _Todos los datos se encriptaran usando el algoritmo "AES"_
 
 ### Cliente
 
-_Vamos a hacer un menu en el que el usuario pueda introducir una frase y obtenerla mas tarde encriptada o sin encriptar ya que se guardara en memoria._
+_Vamos a hacer un menú en el que el usuario pueda introducir una frase y obtenerla mas tarde encriptada o sin encriptar ya que se guardara en memoria._
 
 _El menu sería el siguiente:_
 ```
@@ -19,11 +19,11 @@ _El menu sería el siguiente:_
 ```
 ### Cifradores
 
-_Estos se encargaran de encriptar y desencriptar la frase del usuario mediante métodos creados especificamente para ello._
+_Estos se encargaran de encriptar y desencriptar la frase del usuario mediante métodos creados específicamente para ello._
 
 ## Requermiento 2 📋
 
-_Hay que añadir la opcion de encriptar un objeto coche a nuestra aplicación._
+_Hay que añadir la opción de encriptar un objeto coche a nuestra aplicación._
 
 ### Cliente
 
@@ -46,7 +46,7 @@ _Se han añadido nuevos cifradores capaces de encriptar y desencriptar el objeto
 
 _Tenemos que cambiar la forma de encriptar los datos de simétrica a asimétrica, por lo que se usarán claves públicas y privadas para ello._
 
-_Se tratará de una encriptacion que busca la confidencialidad (RSA)_
+_Se tratará de una encriptación que busca la confidencialidad (RSA)_
 
 ### Cliente
 
@@ -59,7 +59,7 @@ _Se han modificado para que encripten y desencripten de forma asimétrica los da
 ## Restricciones ❗
 _Hay algunas validaciones en la aplicación para evitar su mal funcionamiento._
 
-      -No se permite dejar campos vacios, para ello utilizamos los métodos _isNumeric()_ y _comprobar()_
+      -No se permite dejar campos vacíos, para ello utilizamos los métodos _isNumeric()_ y _comprobar()_
       -Solo se pueden seleccionar las opciones mostradas en el menú, en caso de introduccir un valor distinto te lo indicará.
       -Si no hay ninguna frase u objeto encriptados te lo indicará.
       
